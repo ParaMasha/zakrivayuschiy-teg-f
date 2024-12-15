@@ -25,4 +25,7 @@ linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
 --margin-desktop-size: clamp(80px, 7vw, 120px);
 --margin-mobile-size: clamp(101px, 7vw, 120px);
+
+--heart-border-color: #000;
+--heart-main-body-color: #ff0000;
 }

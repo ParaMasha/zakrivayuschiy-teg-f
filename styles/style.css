@@ -13,4 +13,69 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--page-main-font), sans-serif;
+  font-variation-settings:
+    'wght' var(--page-main-font-weight),
+    'wdth' 100,
+    'opsz' 0;
+  color: var(--main-font-color);
+  line-height: var(--main-font-line-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-block-size: 100dvb;
+  min-inline-size: 320px;
+  background-image: var(--page-background-image);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  block-size: clamp(200px, 56vh, 368px);
+  background-color: #ffffff;
+  font-family: var(--page-accent-font), fantasy;
+  margin: var(--margin-desktop-size);
+}
+
+.main__header {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--main-title-font-size);
+  line-height: var(--main-font-line-height);
+  color: var(--main-font-color);
+  margin-block-start: 20px;
+  block-size: 65px;
+}
+
+.title__description {
+  display: flex;
+  text-transform: uppercase;
+  font-size: var(--subtitle-font-size);
+  line-height: var(--subtitle-line-height);
+  flex-wrap: nowrap;
+  block-size: 23px;
+}
+
+.main__section {
+  display: flex; 
+}
+
+.card {
+  border: 2px solid #000;
+  inline-size: min(100vi, 700px);
+  background-color: var(--main-background-color);
+}
+
+.card__title {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--page-main-font), sans-serif;
+  font-size: var(--main-font-size);
+  line-height: var(--main-font-line-height);
+  font-weight: var(--page-main-font-weight);
 }

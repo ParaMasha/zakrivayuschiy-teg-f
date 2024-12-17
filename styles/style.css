@@ -216,3 +216,8 @@
   border: 2px solid #000;
 }
 
+.floppy-min-size {
+  width: 21px;
+  height: 21px;
+}
+

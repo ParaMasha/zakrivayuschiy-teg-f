@@ -111,6 +111,26 @@
   filter: saturate(200%);
 }
 
+.filter-multy {
+  filter: hue-rotate(180deg) sepia(1) saturate(150%);
+}
+
+.filter-invert {
+  filter: invert(0.8);
+}
+
+.filter-rotate {
+  filter: hue-rotate(320deg);
+}
+
+.filter-grayscale {
+  filter: grayscale(0.7);
+}
+
+.filter-blur {
+  filter: blur(0.5rem);
+}
+
 .card__image-element {
   position: absolute;
   opacity: 0.5; 

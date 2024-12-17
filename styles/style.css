@@ -172,7 +172,7 @@
   gap: 6px; 
 }
 
-.card-like__button {
+.card__like-button {
   width: 130px;
   height: 38px;
   font-family: var(--page-accent-font), fantasy;

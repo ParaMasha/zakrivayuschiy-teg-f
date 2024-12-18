@@ -156,6 +156,10 @@
   line-height: var(--main-font-line-height);
 }
 
+.like-icon .heart {
+  transform-origin: center;
+}
+
 @supports 
     (-webkit-text-stroke: 1px #fff) or
     (text-stroke: 1px #fff)
@@ -196,6 +200,12 @@
   align-items: center;
   background-color: transparent;
   padding: 0;
+  transition: border-color 0.3 ease;
+}
+
+.like__icon-button:focus-visible {
+  outline: none;
+  border-color: #000;
 }
 
 .feedback {

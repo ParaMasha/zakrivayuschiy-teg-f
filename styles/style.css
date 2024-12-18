@@ -214,10 +214,53 @@
   align-items: center;
   background-color: #fff;
   border: 2px solid #000;
+  cursor: pointer;
 }
 
 .floppy-min-size {
   width: 21px;
-  height: 21px;
 }
 
+.window-dialog {
+  position: fixed;
+  padding: 30px;
+  border: 2px solid #000;
+  z-index: 1;
+  background-color: #fff;
+  max-width: 357px;
+  top: 0;
+  left: 0;
+}
+
+.window-dialog::backdrop {
+  opacity: 0.75;
+  background-color: #000;
+}
+
+.dialog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 30px;
+  gap: 20px;
+}
+
+.floppy-max-size {
+  inline-size: 39px;
+  block-size: 39px;
+  flex-shrink: 0;
+}
+
+.dialog-window-title {
+  font-family: var(--page-accent-font);
+  font-size: var(--like-button__font-size);
+  text-transform: uppercase;
+}
+
+.discet-insert {
+  text-transform: uppercase;
+  inline-size: 100%;
+  border: 2px solid #000;
+  block-size: 38px;
+  font-size: var(--like-button__font-size);
+}

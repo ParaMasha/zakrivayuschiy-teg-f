@@ -552,20 +552,37 @@
       </li>
       </ul>
       <section class="feedback">
-        <button class="save__memory"
+        <button class="button save__memory"
           type="button"
-          onclick="document.getElementById('memoryModal').showModal();"
+          onclick="document.getElementById('dialogWindow').showModal();"
           aria-controls="modal"
-          id="ModalButtonOpen"
-          aria-label="Нажать кнопку Сохранить на память"
-          >
+          id="ModalButtonOpen">
           <svg class="floppy-min-size" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
-            <use href="#save-discet"></use>
+            <use href="#save-discet">
+            </use>
           </svg>
         </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
       </section>
+      <dialog class="window-dialog" id="dialogWindow">
+          <div class="dialog-content">
+              <svg class="floppy-max-size" viewBox="0 0 39 39">
+                <use href="#save-discet">
+                </use>
+              </svg>
+           <div class="dialog-window-text">
+             <h2 class="dialog-window-title">
+               Вставьте дискету, чтобы продолжить
+             </h2>
+           </div>
+          </div>
+        <button class="button discet-insert" 
+        id="ModalButtonClose"
+        onclick="document.getElementById('dialogWindow').close();">
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

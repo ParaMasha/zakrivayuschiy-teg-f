@@ -295,6 +295,12 @@
   flex-shrink: 0;
 }
 
+.save__memory svg {
+  mix-blend-mode: difference;
+  z-index: 2;
+  color: #fff;
+}
+
 .dialog-window-title {
   font-family: var(--page-accent-font);
   font-size: var(--like-button__font-size);

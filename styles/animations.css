@@ -96,4 +96,5 @@
 
 .like-icon .sparks {
   opacity: 0;
+  transform-origin: center;
 }

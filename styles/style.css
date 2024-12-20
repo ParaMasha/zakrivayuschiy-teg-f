@@ -230,7 +230,7 @@
   z-index: 2;
 }
 
-.like__icon-button {
+.card__icon-button {
   display: flex; 
   border: none; 
   cursor: pointer; 
@@ -241,7 +241,7 @@
   transition: border-color 0.3s ease;
 }
 
-.like__icon-button:focus-visible {
+.card__icon-button:focus-visible {
   outline: none;
   border-color: #000
 }

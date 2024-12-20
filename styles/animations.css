@@ -75,7 +75,7 @@
 
 .like-icon .main-body {
   transition: fill 0.3s linear;
-  fill: #fff;
+  fill: transparent;
 }
 
 .like-icon:hover .main-body {

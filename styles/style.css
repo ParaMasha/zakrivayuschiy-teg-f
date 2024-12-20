@@ -191,6 +191,12 @@
   position: relative;
 }
 
+.button .svg {
+  position: relative; 
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
 .button:focus {
   outline: none; 
 }
@@ -202,13 +208,11 @@
 .button::after {
   content: "";
   inset: 0;
-  z-index: 1; 
   position: absolute;
   background-color: #000;
-  block-size: 100%; 
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.5 ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .button:hover::after {
@@ -239,7 +243,7 @@
 
 .like__icon-button:focus-visible {
   outline: none;
-  border-color: #000;
+  border-color: #000
 }
 
 .feedback {

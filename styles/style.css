@@ -318,3 +318,57 @@
   block-size: 38px;
   font-size: var(--like-button__font-size);
 }
+
+@media (width = 500px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100vw;
+  }
+}
+
+@media (width <= 375px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100vw;
+  }
+
+  .header {
+    margin: var(--margin-mobile-size);
+    inline-size: 100vw;
+    block-size: 326px;
+    gap: 0;
+  }
+
+  .main__header {
+    font-size: clamp(2.3125rem, 0.8125rem + 9.6vw, 3.0625rem);
+    block-size: 53px;
+  }
+
+  .title__description {
+    block-size: 20px;
+  }
+
+  .save__memory {
+    inline-size: 310px;
+    block-size: 84px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .floppy-mid-size {
+    width: 28px;
+    height: 28px;
+  }
+
+  .window-dialog {
+    min-width: 343px;
+    right: 6px;
+    padding: 30px 42px;
+  }
+
+  .dialog-content {
+    inline-size: 257px;
+  }
+}

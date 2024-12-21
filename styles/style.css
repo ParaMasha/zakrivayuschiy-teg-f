@@ -29,6 +29,7 @@
   background-size: cover;
   background-repeat: no-repeat; 
   background-attachment: fixed;
+  position: relative;
 }
 
 .header {
@@ -320,10 +321,15 @@
 }
 
 @media (max-width = 475px) {
+
   .page {
     display: flex;
     flex-direction: column;
-    inline-size: 100vw;
+    inline-size: min(100vw, 300px);
+  }
+
+  .card {
+    inline-size: min(100vi, 300px);
   }
 }
 
@@ -331,14 +337,13 @@
   .page {
     display: flex;
     flex-direction: column;
-    inline-size: 100vw;
+    inline-size: 100%;
   }
 
   .header {
     margin: var(--margin-mobile-size);
-    inline-size: 100vw;
-    block-size: 326px;
     gap: 0;
+    block-size: clamp(200px, 56vh, 326px);
   }
 
   .main__header {
@@ -348,6 +353,10 @@
 
   .title__description {
     block-size: 20px;
+  }
+
+  .card {
+    inline-size: 100%;
   }
 
   .save__memory {

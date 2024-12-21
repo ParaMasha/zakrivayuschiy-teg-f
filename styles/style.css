@@ -14,10 +14,8 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--page-main-font), sans-serif;
-  font-variation-settings:
-    'wght' var(--page-main-font-weight),
-    'wdth' 100,
-    'opsz' 0;
+  font-variation-settings: "wght" var(--page-main-font-weight), "wdth" 100,
+    "opsz" 0;
   color: var(--main-font-color);
   line-height: var(--main-font-line-height);
   display: flex;
@@ -25,14 +23,14 @@
   align-items: center;
   background-image: var(--page-background-image);
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
 }
 
 .header {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   block-size: clamp(200px, 56vh, 368px);
@@ -61,7 +59,7 @@
 }
 
 .main__section {
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
 
@@ -84,10 +82,8 @@
   font-family: var(--page-main-font), sans-serif;
   font-size: var(--main-font-size);
   line-height: var(--main-font-line-height);
-  font-variation-settings:
-  'wght' var(--page-titles-font-weight),
-  'wdth' 100,
-  'opsz' 0;
+  font-variation-settings: "wght" var(--page-titles-font-weight), "wdth" 100,
+    "opsz" 0;
   padding: 4px 10px 6px;
 }
 
@@ -134,10 +130,10 @@
 
 .card__image-element {
   position: absolute;
-  opacity: 0.5; 
+  opacity: 0.5;
   color: #000;
   font-family: var(--page-accent-font);
-  font-size: 14px; 
+  font-size: 14px;
   line-height: 14px;
   right: 25px;
   top: 26px;
@@ -159,24 +155,19 @@
   transform-origin: center;
 }
 
-@supports 
-    (-webkit-text-stroke: 1px #fff) or
-    (text-stroke: 1px #fff)
-{
-
-.card__image-element {
-  text-shadow: none;
-  -webkit-text-stroke: 1px #fff;
-  text-stroke: 1px #fff;
-}
-
+@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+  .card__image-element {
+    text-shadow: none;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+  }
 }
 
 .card__feedback {
-  display: flex; 
-  justify-content: end; 
+  display: flex;
+  justify-content: end;
   padding: 0 25px 25px;
-  gap: 6px; 
+  gap: 6px;
 }
 
 .card__like-button {
@@ -193,13 +184,13 @@
 }
 
 .button .svg {
-  position: relative; 
+  position: relative;
   mix-blend-mode: difference;
   z-index: 2;
 }
 
 .button:focus {
-  outline: none; 
+  outline: none;
 }
 
 .button:focus-visible {
@@ -232,9 +223,9 @@
 }
 
 .card__icon-button {
-  display: flex; 
-  border: none; 
-  cursor: pointer; 
+  display: flex;
+  border: none;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -244,7 +235,7 @@
 
 .card__icon-button:focus-visible {
   outline: none;
-  border-color: #000
+  border-color: #000;
 }
 
 .feedback {
@@ -321,7 +312,6 @@
 }
 
 @media (max-width = 475px) {
-
   .page {
     display: flex;
     flex-direction: column;

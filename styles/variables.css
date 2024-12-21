@@ -1,35 +1,35 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
---page-main-font: "inter", sans-serif;
---page-accent-font: "PressStart2P", fantasy;
---page-main-font-weight: 400;
---page-main-title-font-weight: 700; 
---page-titles-font-weight: 700;
---main-font-line-height: 21px; 
---main-title-font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
---main-title-line-height: 65px;
---subtitle-font-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
---subtitle-line-height: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
---main-font-color: #000000;
---active-font-color: #ffffff;
---main-font-size: 18px;
---like-button__font-size: 14px;
+  --page-main-font: "inter", sans-serif;
+  --page-accent-font: "PressStart2P", fantasy;
+  --page-main-font-weight: 400;
+  --page-main-title-font-weight: 700;
+  --page-titles-font-weight: 700;
+  --main-font-line-height: 21px;
+  --main-title-font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
+  --main-title-line-height: 65px;
+  --subtitle-font-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
+  --subtitle-line-height: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
+  --main-font-color: #000000;
+  --active-font-color: #ffffff;
+  --main-font-size: 18px;
+  --like-button__font-size: 14px;
 
---page-background-image: repeating-linear-gradient(
-  to left,
-  #d3d3d3 0 2px,
-  #d3d3d300 2px 4px
-),
-repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
---main-background-color: #ffffff; 
+  --page-background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 0 2px,
+      #d3d3d300 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --main-background-color: #ffffff;
 
---margin-desktop-size: clamp(80px, 7vw, 120px);
---margin-mobile-size: clamp(101px, 7vw, 120px);
+  --margin-desktop-size: clamp(80px, 7vw, 120px);
+  --margin-mobile-size: clamp(101px, 7vw, 120px);
 
---heart-border-color: #000;
---heart-main-body-color: #ff0000;
+  --heart-border-color: #000;
+  --heart-main-body-color: #ff0000;
 
---like-contour-color-main: #000;
---liked-fill-color: #ff0000;
+  --like-contour-color-main: #000;
+  --liked-fill-color: #ff0000;
 }

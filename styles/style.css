@@ -23,8 +23,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-block-size: 100dvb;
-  min-inline-size: 320px;
   background-image: var(--page-background-image);
   background-size: cover;
   background-repeat: no-repeat; 
@@ -165,11 +163,13 @@
     (-webkit-text-stroke: 1px #fff) or
     (text-stroke: 1px #fff)
 {
+
 .card__image-element {
   text-shadow: none;
   -webkit-text-stroke: 1px #fff;
   text-stroke: 1px #fff;
 }
+
 }
 
 .card__feedback {

@@ -33,20 +33,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  block-size: clamp(200px, 56vh, 368px);
   background-color: #ffffff;
   font-family: var(--page-accent-font), fantasy;
   margin: var(--margin-desktop-size);
+  padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  gap: 44px;
 }
 
 .main__header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: var(--main-title-font-size);
   line-height: var(--main-font-line-height);
   color: var(--main-font-color);
   margin-block-start: 20px;
-  block-size: 65px;
+
 }
 
 .title__description {
@@ -55,7 +57,6 @@
   font-size: var(--subtitle-font-size);
   line-height: var(--subtitle-line-height);
   flex-wrap: nowrap;
-  block-size: 23px;
 }
 
 .main__section {
@@ -167,7 +168,7 @@
   display: flex;
   justify-content: end;
   padding: 0 25px 25px;
-  gap: 6px;
+  gap: 4px;
 }
 
 .card__like-button {
@@ -224,13 +225,14 @@
 
 .card__icon-button {
   display: flex;
-  border: none;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   padding: 0;
   transition: border-color 0.3s ease;
+  border: 2px solid transparent;
+  height: 38px;
 }
 
 .like-icon:focus-visible {
@@ -319,6 +321,7 @@
   border: 2px solid #000;
   block-size: 38px;
   font-size: var(--like-button__font-size);
+  background-color: #fff;
 }
 
 @media (max-width = 475px) {
@@ -342,21 +345,21 @@
 
   .header {
     margin: var(--margin-mobile-size);
-    gap: 0;
-    block-size: clamp(200px, 56vh, 326px);
+    gap: 34px;
   }
 
   .main__header {
     font-size: clamp(2.3125rem, 0.8125rem + 9.6vw, 3.0625rem);
-    block-size: 53px;
-  }
-
-  .title__description {
-    block-size: 20px;
+    margin-block-start: 15px;
   }
 
   .card {
     inline-size: 100%;
+  }
+
+  .card__image-element {
+    right: 11px; 
+    top: 24px;
   }
 
   .save__memory {
@@ -373,7 +376,6 @@
 
   .window-dialog {
     min-width: 343px;
-    right: 6px;
     padding: 30px 42px;
   }
 

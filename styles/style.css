@@ -48,7 +48,6 @@
   line-height: var(--main-font-line-height);
   color: var(--main-font-color);
   margin-block-start: 20px;
-
 }
 
 .title__description {
@@ -358,7 +357,7 @@
   }
 
   .card__image-element {
-    right: 11px; 
+    right: 11px;
     top: 24px;
   }
 

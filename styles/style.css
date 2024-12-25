@@ -36,7 +36,7 @@
   background-color: #ffffff;
   font-family: var(--page-accent-font), fantasy;
   margin: var(--margin-desktop-size);
-  padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  padding: 128px 120.5px 127px;
   gap: 44px;
 }
 
@@ -345,6 +345,7 @@
   .header {
     margin: var(--margin-mobile-size);
     gap: 34px;
+    padding: 120px 14px;
   }
 
   .main__header {
